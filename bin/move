@@ -6,7 +6,8 @@ require_relative '../lib/move.rb'
 puts "Welcome to Tic Tac Toe!"
 display_board(board)
 puts "Where would you like to go?"
-user_input = gets.strip.to_i               #strip out whitespaces on the string and convert to int
+user_input = gets.strip               #get input and strip out whitespaces on the string
+user_input.to_i                       #convert to integer
 input_to_index(user_input)
 move(board,index)
 display_board(board)
