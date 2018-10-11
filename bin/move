@@ -12,6 +12,7 @@ puts "Where would you like to go?"
 
 user_input = gets.strip               #get input and strip out whitespaces on the string
 input_to_index(user_input)            #send input to change to index.
+index = input_to_index(user_input)       
 
-move(board,index,value)               #move function call 
+move(board,index,value = "X")               #move function call 
 display_board(board)                  #display changed board
