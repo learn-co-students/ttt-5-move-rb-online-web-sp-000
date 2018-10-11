@@ -10,6 +10,7 @@ end
 # code your input_to_index and move method here!
 
 def input_to_index(user_input)
+user_input.to_i                       #convert to integer
 index = user_input - 1                     #convert to index value
 return index                         #return index for use in other methods
 end
