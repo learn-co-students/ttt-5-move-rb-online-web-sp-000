@@ -12,7 +12,7 @@ end
 def input_to_index(input)
 input = gets.strip.to_i               #strip out whitespaces on the string and convert to int
 index = input - 1                     #convert to index value
-#return index                         #return index for use in other methods
+return index                         #return index for use in other methods
 end
 
 def move (board,index)
