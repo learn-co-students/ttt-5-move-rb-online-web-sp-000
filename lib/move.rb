@@ -9,7 +9,6 @@ end
 
 # code your input_to_index and move method here!
 def input_to_index(input)
-  puts "Where would you like to go?"
 input = gets.strip.to_i               #strip out whitespaces on the string and convert to int
 index = input - 1                     #convert to index value
 #return index                          #return index for use in other methods
