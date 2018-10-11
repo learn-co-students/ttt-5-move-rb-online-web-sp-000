@@ -13,6 +13,6 @@ index = user_input.to_i - 1          #convert to integer and covert to index
 return index                         #return index for use in other methods
 end
 
-def move (board,index,value = " ")
+def move (board,index,value = "X")
 board[index] = value                   #set the value of the board's index to X
 end

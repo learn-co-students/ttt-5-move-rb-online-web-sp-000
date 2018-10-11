@@ -3,11 +3,15 @@
 require_relative '../lib/move.rb'
 
 # Code your CLI Here
+
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+
 puts "Welcome to Tic Tac Toe!"
 display_board(board)
 puts "Where would you like to go?"
-user_input = gets.strip               #get input and strip out whitespaces on the string
-input_to_index(user_input)
-move(board,index)
-display_board(board)
 
+user_input = gets.strip               #get input and strip out whitespaces on the string
+input_to_index(user_input)            #send input to change to index.
+
+move(board,index,value)               #move function call 
+display_board(board)                  #display changed board
