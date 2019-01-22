@@ -7,3 +7,17 @@ def display_board(board)
 end
 
 # code your input_to_index and move method here!
+
+
+
+# argument - what the user inputs 
+def input_to_index(index)
+  index.to_i - 1
+end
+
+# 1st argument - the board
+# 2nd argument - index in the board array the player would like to fill out with an "X" or an "O"
+# 3rd argument - player's character (X or O)
+def move(board, index, player = "X")
+  board[index] = player
+end
