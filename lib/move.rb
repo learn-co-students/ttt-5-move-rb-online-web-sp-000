@@ -8,4 +8,4 @@ end
 
 # code your #input_to_inbox here
 
-puts = ("1" - "9")
+puts = "1" - "9"
