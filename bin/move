@@ -1,26 +1,19 @@
 #!/usr/bin/env ruby
 
 require_relative '../lib/move.rb'
-  #Welcome message
-puts "Welcome to Tic Tac Toe!"
-  #Defines the initial board space values
-board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-  #displays the initial board state.
-puts display_board(board)
-  #prompts user input.
-puts "enter your number here:"
-#captures the user input.
-input=gets.strip
-  #converts input to board index position.
-#position = input.to_i - 1
-  #establishes filler symbol
-  index = input_to_index(input)
-#token = "X"
-  #places filler symbol in board arry specified by user input.
-#board[position] = token
-move(board, index)
-  #displays updated board with new filler symbol.
-display_board(board)
 
-# Code your CLI Here
-#ok - there was a lot of trial and error -
+puts "Welcome to Tic Tac Toe!"
+
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+
+puts display_board(board)
+
+puts "enter your number here:"
+
+input=gets.strip
+
+index = input_to_index(input)
+
+move(board, index)
+
+display_board(board)
