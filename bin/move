@@ -2,4 +2,14 @@
 
 require_relative '../lib/move.rb'
 
-# Code your CLI Here
+#Code your CLI Here
+puts "Welcome to Tic Tac Toe!" #Outputs our opening message to the user.
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "] #Creates the spaces that will be filled on our board.
+
+puts "Where would you like to go?" #Outputs a message that prompts the user to enter the value of the space they want to fill.
+input = gets.strip #Uses the 'gets' method to retrieve the user input and remove the whitespace & new lines
+
+index = input_to_index(input) #Sets variable equal to the value returned by our method with the user input as its argument.
+move(board, index, "X") #Method takes our array board, the indexed value chosen by the user, and selects the character to fill.
+
+display_board(board) #Returns the board now updated with the user's character and space choice.
