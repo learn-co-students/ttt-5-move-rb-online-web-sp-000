@@ -2,6 +2,22 @@
 
 require_relative '../lib/move.rb'
 
-puts "Welcome to Tic Tac Toe!"
+puts "Welcome to Tic Tac Toe!" 
+
+#display board
+puts " #{board[0]} | #{board[1]} | #{board[2]} " 
+  puts "-----------"
+  puts " #{board[3]} | #{board[4]} | #{board[5]} "
+  puts "-----------"
+  puts " #{board[6]} | #{board[7]} | #{board[8]} "
+  
 puts "Where would you like to go?"
+
+#store user input
 user_input = gets.strip
+
+#convert user input into array using input_to_index method, store this as variable input_to_index
+
+#call move with arguments board, index, x
+
+#display board by calling method, passing in necessary arguments

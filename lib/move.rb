@@ -12,10 +12,10 @@ def input_to_index(user_input)
 end
 
 #return modified board with updated user input
-#def move(board, input_to_index, value)
- # value = "X"
-  #board = " #{board[0]} | #{board[1]} | #{board[2]} "
-  #return board[input_to_index] = value
-#end
+def move(board, index, value = "X")
+  board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+  board[index] = value
+end
+
 
 

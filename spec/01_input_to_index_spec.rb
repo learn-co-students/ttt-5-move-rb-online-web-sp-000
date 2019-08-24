@@ -11,7 +11,7 @@ describe '#input_to_index' do
 
   it 'subtracts 1 from the user_input' do
     converted_input = input_to_index(user_input)
-
+    user_input="6"
     expect(converted_input).to be(5)
   end
 
