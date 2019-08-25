@@ -4,18 +4,14 @@ require_relative '../lib/move.rb'
 
 puts "Welcome to Tic Tac Toe!" 
 
-#display board--why would this not have the full board layout?
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
 puts "Where would you like to go?"
 
-#store user input
 user_input = gets.strip
+index = input_to_index(user_input)
 
-#Convert user input into array, create and store"index" 
-input_to_index(user_input)
+move(board, index)
 
-#call move with arguments board, index, x
-
-
-#display board by calling method, passing in necessary arguments
+#call dsiplay board method, board as argument
+display_board(board)
