@@ -3,3 +3,12 @@
 require_relative '../lib/move.rb'
 
 # Code your CLI Here
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "];
+user_input = gets.strip;
+
+puts("Welcome to Tic Tac Toe!");
+puts("Pick any number between 1 & 9, then double it's value, and afterwards add two to it. From there divide the result by 2, and then subtract that result by the original number that you had picked, giving you the answer of 1. :)");
+position = input_to_index(user_input)
+
+move(board, position)
+display_board(board)
