@@ -6,9 +6,9 @@ describe './bin/move executing a CLI Application' do
     allow(self).to receive(:gets).and_return("1")
     allow(self).to receive(:move)
 
-    board = get_variable_from_file("./bin/move", "board")
+    board_array = get_variable_from_file("./bin/move", "board_array")
 
-    expect(board).to eq([" ", " ", " ", " ", " ", " ", " ", " ", " "])
+    expect(board_array).to eq([" ", " ", " ", " ", " ", " ", " ", " ", " "])
   end
 
   it 'prints "Welcome to Tic Tac Toe!"' do
@@ -52,9 +52,9 @@ describe './bin/move executing a CLI Application' do
     allow($stdout).to receive(:puts)
 
     allow(self).to receive(:gets).and_return('1')
-    board = get_variable_from_file("./bin/move", "board")
+    board_array = get_variable_from_file("./bin/move", "board_array")
 
-    expect(board).to eq(["X", " ", " ", " ", " ", " ", " ", " ", " "])
+    expect(board_array).to eq(["X", " ", " ", " ", " ", " ", " ", " ", " "])
   end
 
   it 'calls display_board passing the modified board' do
