@@ -14,19 +14,14 @@ end
 
 # code your input_to_index and move method here!
 
-def input_to_index
+def input_to_index (user_input)
 
-  puts "Please input the position on the board you would like to fill"
-  input_position = gets.chomp
-  input_position.to_i
+  user_input.to_i - 1 # convert input string to integer
 
 end
 
-def move (array, index, value)
+def move (array_board, index, current_player = "X")
+
+  array_board[index] = current_player
 
 end
-
-def update_array_with(array, index, value)
-/
-end
-
