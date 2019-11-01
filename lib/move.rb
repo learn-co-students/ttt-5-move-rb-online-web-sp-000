@@ -17,7 +17,7 @@ end
 def input_to_index (user_input)
 
   user_input.to_i - 1 # convert input string to integer
-
+                      # since its an array make sure to map to the correct location on board
 end
 
 def move (array_board, index, current_player = "X")
