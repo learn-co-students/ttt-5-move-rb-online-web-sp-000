@@ -1,5 +1,22 @@
 #!/usr/bin/env ruby
-
 require_relative '../lib/move.rb'
+board = []
+9.times do
+  board << " "
+end
+
+puts "Welcome to Tic Tac Toe!"
+puts display_board(board)
+puts "Please enter a number from 1-9 to choose a position."
+puts "Numbers go from are ordered from smallest to largest, from left to right, 1 row at a time."
+input = gets.chomp
+
+move(board, input_to_index(input))
+
+puts display_board(board)
+
+
+
+
 
 # Code your CLI Here
