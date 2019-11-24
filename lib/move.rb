@@ -14,7 +14,10 @@ puts ""
 display_board(board)
 
 # code your input_to_index and move method here!
-
+def input_to_index(input)
+  converted_input = input.to_i
+  converted_input = converted_input = 1
+end
 
 index = converted_input
 
