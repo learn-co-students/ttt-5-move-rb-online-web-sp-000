@@ -2,4 +2,14 @@
 
 require_relative '../lib/move.rb'
 
-# Code your CLI Here
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+player_character = "O"
+converted_input = user_input.to_i-1
+
+puts "Welcome to Tic Tac Toe!"
+puts "Where would you like to go?"
+user_input = gets.chomp
+display_board(board)
+
+
+#/ move(board, converted_input, player_character = "X")
