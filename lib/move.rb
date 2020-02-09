@@ -6,4 +6,15 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
-# code your input_to_index and move method here!
+
+
+def input_to_index(user_input)
+
+  index_number = user_input.to_i
+ return index_number = index_number - 1
+end
+
+def move(board,position,player = "X")
+  
+return board[position] = player
+end
