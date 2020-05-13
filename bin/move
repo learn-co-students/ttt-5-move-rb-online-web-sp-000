@@ -2,4 +2,17 @@
 
 require_relative '../lib/move.rb'
 
-# Code your CLI Here
+puts "Welcome to Tic Tac Toe!"
+
+board = [" "," "," "," "," "," "," "," "," "]
+puts "Where would you like to go?"
+player_input = gets.strip
+
+# Convert Player's Input To Gameboard Integer Index
+desired_move = input_to_index(player_input)
+
+# Move the Player's Symbol On the Gameboard
+move(board, desired_move,"X")
+
+# Display the Board
+display_board(board)
