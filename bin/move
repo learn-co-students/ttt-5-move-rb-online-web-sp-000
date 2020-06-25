@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
-
 require_relative '../lib/move.rb'
 
-# Code your CLI Here
+def greeting
+  puts = "Welcome to Tic Tac Toe!"
+  puts = "Where would you like tp go?"
+end
