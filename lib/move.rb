@@ -7,3 +7,20 @@ def display_board(board)
 end
 
 # code your input_to_index and move method here!
+#user = ["1","2","3","4","5","6","7","8","9"]
+#position = gets.strip
+#token = "X"
+#board[position.to_i] = token
+
+
+def input_to_index(user_input)
+  new_user_input = user_input.to_i
+    new_user_input -= 1
+    return new_user_input
+end
+
+def move(board, index, player = "X")
+  board[index] = player
+  #play(board)
+  return board
+end
