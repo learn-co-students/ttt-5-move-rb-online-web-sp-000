@@ -6,4 +6,23 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
+
+def input_to_index(input)
+  return input.to_i - 1
+end
+
+def move(board, newvar, value="X")
+  board.insert(newvar, value)
+  board.pop
+end
+
+
+
+
+
+
+
+
+
+
 # code your input_to_index and move method here!
