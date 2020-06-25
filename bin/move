@@ -3,3 +3,20 @@
 require_relative '../lib/move.rb'
 
 # Code your CLI Here
+
+#Lines 8 and 9-13 Display opening message and begininng board state
+puts "Welcome to Tic Tac Toe!"
+board = [" "," "," "," "," "," "," "," "," "]
+puts display_board(board)
+
+puts "Where would you like to go?"
+puts "Please enter a number 1-9:"
+# Takes user input and removes extra whitespace
+input = gets.strip
+# Passes input to #input_to_index and assigns as variabel index
+index = input_to_index(input)
+
+# Calls #move with board state and index to generate move
+move(board, index)
+# Display new board
+display_board(board)
