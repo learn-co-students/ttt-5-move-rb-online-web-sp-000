@@ -3,3 +3,25 @@
 require_relative '../lib/move.rb'
 
 # Code your CLI Here
+
+puts "Welcome to Tic Tac Toe!"
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+
+puts "Where would you like to go?"
+input = gets.strip
+
+index = input_to_index(input)
+
+move(board, index, "X")
+display_board(board)
+
+# puts "Will you be X's or O's? #{player=gets.strip}"
+# puts "Will you be X's or O's? "
+# player=gets.strip
+# if player != "X" && player != "O"
+#  puts "You must enter X or O, please."
+#  player = gets.strip
+# end
+
+# puts "Great, you're #{player}'s.  What's your first move?  Enter 1-9.  For example enter 1 for upper left cell, 5 for center cell, or 9 for bottom right cell"
+# Pboard_position=gets.strip
