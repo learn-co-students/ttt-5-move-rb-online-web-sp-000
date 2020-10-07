@@ -18,16 +18,17 @@ end
 #define the move method
 #3 arguments: board array, index board array which will either be X or O, and the players character which will default to X
 def move(board, index_board_array, character = "X")
-  index_board_array = "X" or "O"
+  board = [" ", " ", " "]
+  board[index_board_array] = character
 end
 
-#update the board
-board = [" ", " ", " "]
-def update_array_at_with(array, index, value)
-  array[index] = value
-end
+# #update the board
+# board = [" ", " ", " "]
+# def update_array_at_with(array, index, value)
+#   array[index] = value
+# end
  
-update_array_at_with(board, 0, "X")
+# update_array_at_with(board, 0, "X")
 
  
 
