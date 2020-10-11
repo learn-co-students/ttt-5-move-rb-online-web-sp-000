@@ -31,7 +31,7 @@ spec
   |–– spec_helper.rb
 ...
 ```
-
+https://learn.co/tracks/full-stack-web-development-v8/module-3-intro-to-ruby-development/section-5-command-line-applications/tic-tac-toe-move#
 We have our `bin` directory and it contains our executable file, `move`. Remember that executable files conventionally are not given a file extension like `.rb`.
 
 Open up `bin/move` and take a look at the following code:
