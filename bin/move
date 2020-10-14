@@ -1,4 +1,25 @@
 #!/usr/bin/env ruby
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+
+puts "Welcome to Tic Tac Toe!"
+puts "Where would you like to go?"
+
+user_input = gets.strip
+
+input_to_index(user_input)
+
+index = user_input.to_i - 1
+
+move(board, index, player = "X")
+
+def display_board(board)
+puts " #{board[0]} | #{board[1]} | #{board[2]} \n-----------\n #{board[3]} | #{board[4]} | #{board[5]} \n-----------\n #{board[6]} | #{board[7]} | #{board[8]} "
+return " #{board[0]} | #{board[1]} | #{board[2]} \n-----------\n #{board[3]} | #{board[4]} | #{board[5]} \n-----------\n #{board[6]} | #{board[7]} | #{board[8]} "
+end
+
+display_board(board)
+
+
 
 require_relative '../lib/move.rb'
 
