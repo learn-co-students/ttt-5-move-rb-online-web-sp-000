@@ -8,13 +8,14 @@ def display_board(board)
 end
 
 def input_to_index(input) 
-   if (1..9).cover?(input) == FALSE
+   if (1..9).cover?(input) == false 
      puts "invalid"
-  index = input.to_i-1
+  string = input.to_i 
+  index = string - 1 
 end  
 end 
  
 def move(board, index, value = "X")
   board[index] = value
-end   
+end    
     
