@@ -8,6 +8,10 @@ end
 
 # code your input_to_index and move method here!
 
-def input_to_index(move)
-  move.to_i -1
+def input_to_index(input)
+  input.to_i-1
+end
+
+def move(board,input,draw) 
+  display_board[input_to_index(move)]
 end
