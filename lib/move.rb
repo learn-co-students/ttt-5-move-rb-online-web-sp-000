@@ -12,6 +12,6 @@ def input_to_index(input)
   input.to_i-1
 end
 
-def move(board,input,draw) 
-  display_board[input_to_index] = draw
+def move(board,input,draw = "X") 
+  board[input] = draw
 end
