@@ -6,3 +6,5 @@ puts "Welcome to Tic Tac Toe!"
 puts "Where would you like to go?"
 
 move = gets.strip
+
+display_board(board)
