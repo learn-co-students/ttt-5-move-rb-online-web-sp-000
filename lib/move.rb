@@ -13,5 +13,5 @@ def input_to_index(input)
 end
 
 def move(board,input,draw) 
-  display_board[input_to_index(move)]
+  display_board[input_to_index(input)] = draw
 end
