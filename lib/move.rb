@@ -10,6 +10,9 @@ def input_to_index(user_input)
   user_input.to_i-1
 end
 
-def move(board, index, char="X")
-  puts "board#{[0]}", "index#{[1]}", "char#{[2]}"
+def move(board, index, token = "X")
+  board[index] = token
+
+
+
 end
