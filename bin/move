@@ -9,6 +9,4 @@ board = [" "," "," "," "," "," "," "," "," "]
 puts "Where would you like to go?"
 
 move = gets.strip
-input_to_index(move)
-
-move(input_to_index, token)
+move(index)
