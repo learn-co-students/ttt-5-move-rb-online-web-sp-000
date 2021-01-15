@@ -11,7 +11,6 @@ def input_to_index(user_input)
   user_input.to_i - 1
 end
 
-default_value = "X"
-def move(board, index, default_value)
-  board[index] = default_value
+def move(board, index, "X")
+  board[index] = "X"
 end
