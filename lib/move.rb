@@ -12,6 +12,6 @@ def input_to_index(user_input)
 end
 
 board = [" ", " ", " "]
-def move(board, index, value)
+def move(board, index, "X")
   display_board[0] = "X"
 end
