@@ -12,7 +12,7 @@ def input_to_index(user_input)
 end
 
 board = [" ", " ", " "]
-def move(board, index, current_player)
-  board[index] = current_player
-  current_player = "X"
+def move(board, index, character)
+  board[index] = character
+  puts character = "X"
 end
