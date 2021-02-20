@@ -6,4 +6,15 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
-# code your input_to_index and move method here!
+#puts "Turn 1: Where would you like to go 0-8?"
+#board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+
+#position = gets.strip
+def input_to_index(index)
+index.to_i-1
+end
+
+def move(board, index, player="X")
+  #update_array_at_with(array, index, value)
+    board[index] = player
+end
