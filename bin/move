@@ -6,6 +6,7 @@ require_relative '../lib/move.rb'
 
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
-def move(board, input = gets.strip, X) 
-
 input = gets.strip
+
+def move(board, " ", X) 
+
