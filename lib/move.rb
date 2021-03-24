@@ -20,15 +20,6 @@ def input_to_index(input)
 end
 
 
-  # def update_array_at_with(array, index, new_element)
-  #
-  #   array[index] = new_element
-  #
-  #   array
-  #
-  # end
-
-
 def move(board, coordinate, symbol="X")
 
   board[coordinate] = symbol
