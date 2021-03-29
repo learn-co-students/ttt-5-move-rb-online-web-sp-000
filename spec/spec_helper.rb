@@ -26,3 +26,4 @@ def capture_puts
   ensure
     $stdout = old_stdout
   end
+end
